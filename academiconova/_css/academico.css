@@ -1,0 +1,114 @@
+﻿@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+h1 {
+	font-family: 'Orbitron', sans-serif;
+	color: #F0FFFF;
+	text-shadow: 0px 0px 5px rgba(000,000,205,.9);
+	text-align: center;
+	
+}
+h2 {
+	font-family: 'Orbitron', sans-serif;
+	color: #696969;
+	text-align: center;
+	
+}
+legend {
+	font-family: 'Orbitron', sans-serif;
+	color: #606060;
+	text-shadow: 0px 0px 2px rgba(000,000,205,.9);
+	
+}
+
+div#corpo { 
+	 width: 1050px; /*largura*/
+	 background-color: #F0FFFF; /*cor de fundo da interface*/
+	 margin: 10px auto 0px auto;/*margens da interface*/
+	 box-shadow: 0px 0px 10px rgba(000,000,205,.9);/*sombra*/
+	 padding: 10px 10px 100px 10px; /*espaço interno da interface*/
+	
+	
+	 
+}
+
+font#tamanholink {
+	 font-size: 25px;
+	 font-family: 'Orbitron', sans-serif;
+	color: #0000CD;
+	text-shadow: 0px 0px 3x rgba(0,0,0,.9);
+
+}
+body {
+	background-image: url(../_imagens/planodefundo1.jpg);
+    background-repeat: no-repeat;/**/
+	background-size: cover;/*tamanho da imagem*/
+	background-attachment: scroll;    /*....define se a imagem de fundo (fixed= fixar)  ou não (scroll=rolar) com a tela*/
+    background-position: center center;
+}
+
+/*Formatação do menu*/
+nav#menu {
+	diplay: block;/*transforma todo o menu no bloco */
+}
+nav#menu a {
+	color: #0000CD;/*cor do texto do menu*/
+	text-decoration: none;/*retira o sublinhado do menu*/
+}
+nav#menu a:hover{/*efeito de transição quando passar o mouse */
+     color: #ffffff;/*cor do texto*/ 
+	 
+}
+nav#menu ul {
+	 list-style: none; /*restira os marcadores*/
+	 text-transform: uppercase;/*transforma as letras em maiusculas*/
+	 position: absolute;/*faz com que eu possa colocar esse menu em qualquer parte do site*/
+	 top: 300px ;
+	 left: 325px;
+}
+nav#menu ol {
+	 list-style: none; /*restira os marcadores*/
+	 text-transform: uppercase;/*transforma as letras em maiusculas*/
+	 position: absolute;/*faz com que eu possa colocar esse menu em qualquer parte do site*/
+	 top: 360px ;
+	 left: 200px;
+}
+nav#menu ol#menup {/*menu Professor*/
+	 list-style: none; /*restira os marcadores*/
+	 text-transform: uppercase;/*transforma as letras em maiusculas*/
+	 position: absolute;/*faz com que eu possa colocar esse menu em qualquer parte do site*/
+	 top: 360px ;
+	 left: 300px;
+}
+nav#menu ol#menusec {/*menu secretaria*/
+	 list-style: none; /*restira os marcadores*/
+	 text-transform: uppercase;/*transforma as letras em maiusculas*/
+	 position: absolute;/*faz com que eu possa colocar esse menu em qualquer parte do site*/
+	 top: 360px ;
+	 left: 155px;
+}
+nav#menu li {
+	 display: inline-block;/*Transforma em blocos na mesma linha*/
+	 background-color: #F0FFFF;/*cor de fundo do menu*/
+	 padding: 10px;/*espaço dentro da caixa de menu*/
+	 margin: 2px; /*espaço externo da caixa do menu*/
+	 transition: background-color 1s;/*transição da cor do menu*/
+	 box-shadow: 1px 1px 4px rgba(000,000,205,.9);/*sombra*/
+	 
+}
+
+nav#menu li:hover {/*efeito de trocar de cor nos botões*/
+	background-color: rgba(65,105,225,.4);		
+}
+/*icones*/
+div#corpo img#icone {
+	position: absolute;
+	top: 10px;
+	left: 1020px;
+}
+div#SlidesMestre {
+	margin-left:300px;
+	position: relative;
+
+	
+	
+}

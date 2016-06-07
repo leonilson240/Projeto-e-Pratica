@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>cadastrar_professor</title>
+
+<link rel="stylesheet" type="text/css" href="../_css/academico.css"/>
+<script src="../_javascript/validarFormulario.js"></script>
+
+</head>
+
+<body>
+
+<div id="corpo">
+<img src="../_imagens/escola.jpg" height="200px" width="200px">
+<h1>Sistema de Gestão Acadêmica - ACAD</h1>
+<h2>Cadastrar Professor</h2><br><br><br><br><br>
+<nav id="menu">
+<ol>
+<li><a href="../index.html">home</a></li>
+<li><a href="menu_secretaria.html">Secretaria</a></li>
+</nav>
+
+
+
+<Form name="cadastro" method="post" id="casdastroProfesor" action="maiol:leonilson240@hotmail.com">
+	<fieldset id="cadastraprofessor"><legend>Indentificação do Professor</legend>
+
+				<p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+				<p><label for="cRg">RG:</label><input type="text" name="tRg" onKeyPress="MascaraRG(cadastro.tRg);" id="cRg" size="20" maxlength="30" placeholder="Digite o RG"/></p>
+				<p><label for="cCpf">CPF:</label><input type="text" name="tCpf" onKeyPress="MascaraCPF(cadastro.tCpf);" id="cCpf" size="20" maxlength="30" placeholder="Digite CPF"/></p>
+				<p>Data de nascimento:<input type="date"bame="tData" onKeyPress="MascaraDATA(cadastro.tData);" id="cData"/></p>
+		
+		
+							<fieldset id="sexo"><legend>Sexo:</legend>
+			<input type="radio" name="tSexo" id="cMasc"/><label for="cMasc">Masculino</label><br>
+			<input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
+		</fieldset>
+		<p><label for="cemail">Email:</label><input type="E-mail" name="tEmail" id="cemail" size="20" maxlength="40" placeholder="Digite o email"/></p>
+				<fieldset id="endereco"><legend>Endereço</legend>
+			<p><label for="cRua">Rua:</label><input type="text" name="tRua" id="cRua" size="25" maxlength="50" placeholder="Didite o Nome da Rua e o Numero">
+			<p><label for="cCidade">Cidade:</label><input type="text" name="tCidade" id="cCidade" size="20" maxlength="30" placeholder="Didite sua Cidade"/></p>
+				<p><label for="cBairro">Bairro:</label><input type="text" name="tBairro" id="cBairro" size="20" maxlength="30" placeholder="Digite se Bairro"/></p>
+				<p><label for="cCep">CEP:</label><input type="text" name="tCep" onKeyPress="MascaraCep(cadastro.tCep);" id="cCep" size="20" maxlength="30" placeholder="Digite o CEP"/></p>
+			
+			</fieldset><br>
+			<p><label for="cMatricula">Matricula:</label><input type="text" name="tMatricula" id="cMatricula" size="11" maxlength="10" placeholder="Digite a Matricula"/></p>
+				
+				
+				
+					<fieldset id="codigoDiciplina"><legend>Códigos das Diciplinas:</legend>
+				<p>Qualidade:
+					<select name="tQualidade" id="cQualidade" size="9" >
+						
+						<option>1º período:</option>
+						<option>001-Introdução à Qualidade</option>
+						<option>002-Estatística Básica</option>
+						<option>003-português Instrumental</option>
+						<option>004-Introdução á Administração</option>
+						<option>005-Informática Básica</option>
+						<option>006-Matemática Aplicada</option>
+						<option>007-Gestão Ambiental</option>
+						<option>008-Gestão de Processos</option>
+
+						<option>2º período:</option>
+						<option>009-Gestão da Produção</option>
+						<option>010-Gestão da Qualidade e Metrologia</option>
+						<option>011-Gestão da Qualidade de Produtos e Serviços</option>
+						<option>012-Auditorias da Qualidade</option>
+						<option>013-Gestão de Projetos</option>
+						<option>014-Planejamento de Operações</option>
+						<option>015Ferramentas de Qualidade</option>
+
+						<option>3º período:</option>
+						<option>016-Segurança do Trabalho</option>
+						<option>017-Controle Estatístico de Processos</option>
+						<option>018-Normatização Aplicada</option>
+						<option>019-Planejamento Estratégico da Qualidade</option>
+						<option>020-Qualidade e Produtividade</option>
+						<option>021-Tecnologia e Sistemas de Gestão da Qualidade</option>
+						<option>022-Inglês Instrumental</option>
+						<option>023-Contabilidade</option>
+							
+					</select>	
+				</p>
+				<p>Informática para Internet:
+					<select name="tinformatica" id="cinformatica" size="8" >
+						
+						<option>1º período:</option>
+						<option>024-Português Instrumental</option>
+						<option>025-Fundamentos da Informática</option>
+						<option>026-Inglês Instrumental</option>
+						<option>027-Matemática Aplicada</option>
+						<option>028-Redes de Computadores</option>
+						<option>029-Lógica de Programação e Estruturas de Dados</option>
+						<option>030-Segurança do Trabalho</option>
+
+						<option>2º período:</option>
+						<option>031-Sistemas Operacionais</option>
+						<option>032-Segurança de Sistemas para Internet</option>
+						<option>033-Bancos de Dados</option>
+						<option>034-Desenvolvimento para WebI</option>
+						<option>035-Ética Profissional e Cidadania</option>
+						<option>036-Programação orientada a Objeto</option>
+						<option>037-Projeto e Prática I</option>
+
+						<option>3º período:</option>
+						<option>038-Interação Humano-Computador</option>
+						<option>039-Engenharia de Software</option>
+						<option>040-Implantação de Adminidtração de Serviços Web</option>
+						<option>041-Desenvolvimeto para web II</option>
+						<option>042-Empreendedorismo</option>
+						<option>043-Projeto e Prática II</option>
+
+					</select>	
+				</p>
+				</fieldset><br>
+			<input type="button" name="botao-salvar" onclick="return validaForm()" value="Salvar">	
+	</fieldset>  
+
+</Form>
+ 
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>emitir_comprovante_matricula</title>
+<link rel="stylesheet" type="text/css" href="../_css/academico.css"/>
+<script src="../_javascript/validarFormulario.js"></script>
+</head>
+<body>
+<div id="corpo">
+<img src="../_imagens/escola.jpg" height="200px" width="200px">
+<h1>Sistema de Gestão Acadêmica - ACAD</h1>
+<h2> Emitir Comprovante de Matrícula</h2><br><br><br><br>
+<nav id="menu">
+<ol>
+<li><a href="../index.html">home</a></li>
+<li><a href="menu_aluno.html">Aluno</a></li>
+</nav>
+<Form name="cadastro2" method="post" id="casdastroAlu" action="maiol:leonilson240@hotmail.com">
+<fieldset id="comprovanteMatricula"><legend>Comprovante de Matrícula</legend>
+               <p>Aluno:
+					<select name="tNome" id="cNotaAluno" size="1" >
+						
+							<option>Eduardo Costa da Silva</option>
+							<option>Fabiano Vieira</option>
+							<option>Adolfo Eduardo</option>
+							<option>Michel Temer</option>
+							<option>Luiz Inácio Lula da Silva </option>
+							<option>Bolsonaro Presidente</option>
+							<option>Tiago paulo</option>
+							<option>Dilma Rousseff</option>
+							<option>Maria do rosario</option>
+							<option>Fatima Delfino</option>
+							<option>Karla Silva</option>
+							<option>Sara Silva</option>
+							<option>Laudiceia da Silva</option>
+							<option>Helen Graice da Silva</option>
+					</select>	
+				</p>
+				<p><label for="cSemestre">Semestre:</label><input type="text" name="tSemestre" id="cSemestre" size="12" maxlength="8" placeholder="Digite o Semestre"></p>
+				<fieldset id="emissao"><legend>Tipo de emissão:</legend>
+			     <input type="radio" name="temissao" id="cPdf"/><label for="cPdf">PDF</label><br>
+			     <input type="radio" name=temissao" id="cenviarEmail"/><label for="cenviarEmail">Enviar por Email</label>
+		        </fieldset><br>
+<input type="button" name="botao-emitir" onclick="return validaForm2()" value="Emitir">
+</fieldset>
+</Form>
+
+</div>
+</body>
+</html>

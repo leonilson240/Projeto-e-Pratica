@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>registrar_notas</title>
+<link rel="stylesheet" type="text/css" href="../_css/academico.css"/>
+<script src="../_javascript/validarFormulario.js"></script>
+</head>
+<body>
+<div id="corpo">
+<img src="../_imagens/escola.jpg" height="200px" width="200px">
+<h1>Sistema de Gestão Acadêmica - ACAD</h1>
+<h2>Registrar Notas</h2><br><br><br><br><br>
+<nav id="menu">
+<ol>
+<li><a href="../index.html">home</a></li>
+<li><a href="menu_professor.html">Professor</a></li>
+</nav>
+
+<Form name="cadastro3" method="post" id="registraNotas" action="maiol:leonilson240@hotmail.com">
+
+<fieldset id="notaAluno"><legend>Registro de Notas do Aluno</legend>
+               <p>Aluno:
+					<select name="tNotaAluno" id="cNotaAluno" size="1" >
+						
+							<option>Eduardo Costa da Silva</option>
+							<option>Fabiano Vieira</option>
+							<option>Adolfo Eduardo</option>
+							<option>Michel Temer</option>
+							<option>Luiz Inácio Lula da Silva </option>
+							<option>Bolsonaro Presidente</option>
+							<option>Tiago paulo</option>
+							<option>Dilma Rousseff</option>
+							<option>Maria do rosario</option>
+							<option>Fatima Delfino</option>
+							<option>Karla Silva</option>
+							<option>Sara Silva</option>
+							<option>Laudiceia da Silva</option>
+							<option>Helen Graice da Silva</option>
+					</select>	
+				</p>
+
+<fieldset id="diciplina"><legend>Diciplinas:</legend>
+				<p>Qualidade:
+					<select name="tQualidade" id="cQualidade" size="9" >
+						
+						<option>1º período:</option>
+						<option>001-Introdução à Qualidade</option>
+						<option>002-Estatística Básica</option>
+						<option>003-português Instrumental</option>
+						<option>004-Introdução á Administração</option>
+						<option>005-Informática Básica</option>
+						<option>006-Matemática Aplicada</option>
+						<option>007-Gestão Ambiental</option>
+						<option>008-Gestão de Processos</option>
+
+						<option>2º período:</option>
+						<option>009-Gestão da Produção</option>
+						<option>010-Gestão da Qualidade e Metrologia</option>
+						<option>011-Gestão da Qualidade de Produtos e Serviços</option>
+						<option>012-Auditorias da Qualidade</option>
+						<option>013-Gestão de Projetos</option>
+						<option>014-Planejamento de Operações</option>
+						<option>015Ferramentas de Qualidade</option>
+
+						<option>3º período:</option>
+						<option>016-Segurança do Trabalho</option>
+						<option>017-Controle Estatístico de Processos</option>
+						<option>018-Normatização Aplicada</option>
+						<option>019-Planejamento Estratégico da Qualidade</option>
+						<option>020-Qualidade e Produtividade</option>
+						<option>021-Tecnologia e Sistemas de Gestão da Qualidade</option>
+						<option>022-Inglês Instrumental</option>
+						<option>023-Contabilidade</option>
+							
+					</select>	
+				</p>
+				<p>Informática para Internet:
+					<select name="tinformatica" id="cinformatica" size="8" >
+						
+						<option>1º período:</option>
+						<option>024-Português Instrumental</option>
+						<option>025-Fundamentos da Informática</option>
+						<option>026-Inglês Instrumental</option>
+						<option>027-Matemática Aplicada</option>
+						<option>028-Redes de Computadores</option>
+						<option>029-Lógica de Programação e Estruturas de Dados</option>
+						<option>030-Segurança do Trabalho</option>
+
+						<option>2º período:</option>
+						<option>031-Sistemas Operacionais</option>
+						<option>032-Segurança de Sistemas para Internet</option>
+						<option>033-Bancos de Dados</option>
+						<option>034-Desenvolvimento para WebI</option>
+						<option>035-Ética Profissional e Cidadania</option>
+						<option>036-Programação orientada a Objeto</option>
+						<option>037-Projeto e Prática I</option>
+
+						<option>3º período:</option>
+						<option>038-Interação Humano-Computador</option>
+						<option>039-Engenharia de Software</option>
+						<option>040-Implantação de Adminidtração de Serviços Web</option>
+						<option>041-Desenvolvimeto para web II</option>
+						<option>042-Empreendedorismo</option>
+						<option>043-Projeto e Prática II</option>
+
+					</select>	
+				</p>
+				</fieldset><br>
+				
+				<fieldset id="unidade"><legend>Unidade:</legend>
+					<input type="radio" name="tUnidade" id="tUnidadeI"/><label for="cMasc">I Unidade</label>
+					<input type="radio" name="tUnidade" id="tUnidadeII"/><label for="cFem">II Unidade</label>
+				</fieldset>
+				
+		<p><label for="cNota">Nota:</label><input type="text" name="cNota" id="tNota" size="15" maxlength="4" placeholder="Digite a nota do Aluno"/></p><br>
+<input type="button" name="botao-registrarNota" onclick="return validaForm3()" value="Registrar Nota">
+</fieldset>
+</form>
+</divv
+</body>
+</html>

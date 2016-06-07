@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>alterar_dados_pessoais</title>
+<link rel="stylesheet" type="text/css" href="../_css/academico.css"/>
+<script src="../_javascript/validarFormulario.js"></script>
+<script src="../_javascript/mascaraDeValidacao.js"></script>
+</head>
+
+<body>
+<div id="corpo">
+<img src="../_imagens/escola.jpg" height="200px" width="200px">
+<h1>Sistema de Gestão Acadêmica - ACAD</h1>
+<h2>Alterar Dados Pessoais</h2><br><br><br><br>
+
+<nav id="menu">
+<ol>
+<li><a href="../index.html">home</a></li>
+<li><a href="menu_aluno.html">Aluno</a></li>
+</nav>
+
+<Form name="cadastro" method="post" id="casdastroAlu" action="maiol:leonilson240@hotmail.com">
+	<fieldset id="cadastrarAluno"><legend>Indentificação do Aluno</legend>
+
+				<p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+				<p><label for="cRg">RG:</label><input type="text" name="tRg" onKeyPress="MascaraRG(cadastro.tRg);" id="cRg" size="20" maxlength="30" placeholder="Digite o RG"/></p>
+				<p><label for="cCpf">CPF:</label><input type="text" name="tCpf" onKeyPress="MascaraCPF(cadastro.tCpf);"id="cCpf" size="20" maxlength="30" placeholder="Digite CPF"/></p>
+				<p>Data de nascimento:<input type="date" name="tData" onKeyPress="MascaraDATA(cadastro.tData);" id="cData"/></p>
+		
+		<fieldset id="sexo"><legend>Sexo:</legend>
+			<input type="radio" name="tSexo" id="cMasc"/><label for="cMasc">Masculino</label><br>
+			<input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
+		</fieldset>
+		<p><label for="cemail">Email:</label><input type="E-mail" name="tEmail" id="cemail" size="20" maxlength="40" placeholder="Digite o email"/></p>
+				<fieldset id="endereco"><legend>Endereço</legend>
+			<p><label for="cRua">Rua:</label><input type="text" name="tRua" id="cRua" size="25" maxlength="50" placeholder="Didite o Nome da Rua e o Numero">
+			<p><label for="cCidade">Cidade:</label><input type="text" name="tCidade" id="cCidade" size="20" maxlength="30" placeholder="Didite sua Cidade"/></p>
+				<p><label for="cBairro">Bairro:</label><input type="text" name="tBairro" id="cBairro" size="20" maxlength="30" placeholder="Digite se Bairro"/></p>
+				<p><label for="cCep">CEP:</label><input type="text" name="tCep" onKeyPress="MascaraCep(cadastro.tCep);" id="cCep" size="20" maxlength="30" placeholder="Digite o CEP"/></p>
+			
+			</fieldset><br>
+			<input type="button" name="botao-salvar" onclick="return validaForm()" value="Salvar">
+	</fieldset>  
+
+</Form>
+
+
+</div>
+</body>
+</html>
